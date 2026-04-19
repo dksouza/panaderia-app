@@ -13,21 +13,22 @@ export const RecipeDetailView = (id) => {
         <div class="page-view active" style="padding-bottom: 90px; background-color: var(--color-white)">
             ${TopHeader("", true)}
             
-            <div style="position: relative;">
-                <img src="${recipe.img}" alt="${recipe.title}" style="width: 100%; height: 320px; object-fit: cover;">
-                <div style="position: absolute; bottom: -20px; right: 20px;">
+            <div style="position: relative; width: 100%; height: 320px; background: url('${recipe.img}') center/cover;">
+                <div style="position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(74, 59, 50, 0.2) 0%, rgba(44, 43, 41, 0.95) 100%); display: flex; flex-direction: column; justify-content: flex-end; padding: var(--spacing-xl); padding-bottom: 40px;">
+                    <span style="text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1.5px; color: var(--color-accent-gold); margin-bottom: 8px; font-weight: 600;">${recipe.category}</span>
+                    <h1 style="font-size: 2.2rem; font-family: var(--font-heading); font-weight: 700; color: white; line-height: 1.2;">${recipe.title}</h1>
+                </div>
+                <div style="position: absolute; bottom: -25px; right: 20px;">
                     <button id="btnFav" class="btn" style="width: 50px; height: 50px; border-radius: 25px; background: var(--color-white); box-shadow: var(--shadow-md);">
                         <i class="${isFav ? 'ph-fill' : 'ph'} ph-heart" style="font-size: 1.5rem; color: ${isFav ? 'var(--color-accent-cocoa)' : 'var(--color-text-secondary)'};"></i>
                     </button>
                 </div>
             </div>
 
-            <div class="container-pad" style="margin-top: var(--spacing-xl);">
-                <div style="display: flex; gap: 8px; margin-bottom: 8px; flex-wrap: wrap;">
+            <div class="container-pad" style="margin-top: 40px;">
+                <div style="display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap;">
                     ${recipe.tags.map(t => `<span style="font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: var(--color-accent-gold);">${t}</span>`).join('<span style="color:var(--color-border)">|</span>')}
                 </div>
-                
-                <h1 style="font-size: 2rem; margin-bottom: var(--spacing-sm);">${recipe.title}</h1>
                 <p style="color: var(--color-text-secondary); font-size: 1rem; margin-bottom: var(--spacing-md); line-height: 1.6;">${recipe.description}</p>
                 
                 <!-- Meta Info Box -->

@@ -39,10 +39,14 @@ export const BottomNav = () => `
 
 export const RecipeCardLarge = (recipe) => `
     <div class="recipe-card-large" onclick="window.location.hash='recipe/${recipe.id}'">
-        <img src="${recipe.img}" alt="${recipe.title}" class="recipe-img-l" loading="lazy">
+        <div style="position: relative; width: 100%; height: 220px; background: url('${recipe.img}') center/cover;">
+            <div style="position: absolute; inset: 0; background: linear-gradient(135deg, rgba(74, 59, 50, 0.9) 0%, rgba(44, 43, 41, 0.7) 100%); display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: white; padding: 20px;">
+                <span style="text-transform: uppercase; font-size: 0.75rem; letter-spacing: 1px; color: var(--color-accent-gold); margin-bottom: 8px;">${recipe.category}</span>
+                <h3 style="font-size: 1.5rem; font-family: var(--font-heading); font-weight: 600; line-height: 1.2;">${recipe.title}</h3>
+            </div>
+        </div>
         <div class="recipe-info-l">
-            <h3 class="recipe-title-l">${recipe.title}</h3>
-            <div class="recipe-meta">
+            <div class="recipe-meta" style="justify-content: space-between;">
                 <span class="meta-item"><i class="ph ph-clock"></i> ${recipe.time?.total || 20}m</span>
                 <span class="meta-item"><i class="ph ph-chart-bar"></i> ${recipe.difficulty}</span>
                 <span class="meta-item" style="color: var(--color-accent-sage)"><i class="ph ph-drop"></i> Low Spike</span>
@@ -53,9 +57,13 @@ export const RecipeCardLarge = (recipe) => `
 
 export const RecipeCardHorizontal = (recipe) => `
     <div class="recipe-card-h" onclick="window.location.hash='recipe/${recipe.id}'">
-        <img src="${recipe.img}" alt="${recipe.title}" class="recipe-img-h" loading="lazy">
+        <div style="position: relative; width: 100%; height: 120px; background: url('${recipe.img}') center/cover;">
+            <div style="position: absolute; inset: 0; background: linear-gradient(135deg, rgba(74, 59, 50, 0.9) 0%, rgba(44, 43, 41, 0.7) 100%); display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: white; padding: 10px;">
+                <span style="text-transform: uppercase; font-size: 0.6rem; letter-spacing: 0.5px; color: var(--color-accent-gold); margin-bottom: 4px;">${recipe.category}</span>
+                <h4 style="font-size: 1rem; font-weight: 600; line-height: 1.2;">${recipe.title}</h4>
+            </div>
+        </div>
         <div class="recipe-info-h">
-            <h4 class="recipe-title-h">${recipe.title}</h4>
             <div class="recipe-meta">
                 <span class="meta-item"><i class="ph ph-clock"></i> ${recipe.time?.total || 20}m</span>
             </div>
