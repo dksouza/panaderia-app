@@ -9,6 +9,7 @@ import { RecipeDetailView } from './pages/RecipeDetail.js';
 import { SavedView } from './pages/Saved.js';
 import { BonusesView } from './pages/Bonuses.js';
 import { ProfileView } from './pages/Profile.js';
+import { SmartPortionView } from './pages/SmartPortion.js';
 
 // Define Routes
 const routes = {
@@ -18,7 +19,8 @@ const routes = {
     'recipe': RecipeDetailView,
     'saved': SavedView,
     'bonuses': BonusesView,
-    'profile': ProfileView
+    'profile': ProfileView,
+    'portion-control': SmartPortionView
 };
 
 // Initialize App

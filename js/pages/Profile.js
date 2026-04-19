@@ -21,8 +21,17 @@ export const ProfileView = () => {
 
                 <!-- Menu Links -->
                 <div style="background: var(--color-white); border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-sm); margin-bottom: var(--spacing-xl);">
+                    <a href="#portion-control" style="display: flex; align-items: center; justify-content: space-between; padding: var(--spacing-md); border-bottom: 1px solid var(--color-border); background: rgba(212,175,55,0.05);">
+                        <div style="display: flex; align-items: center; gap: 12px; font-weight: 500;">
+                            <i class="ph-fill ph-scales" style="font-size: 1.3rem; color: var(--color-accent-gold);"></i> 
+                            <div>
+                                <span style="display: block; color: var(--color-text-primary);">Smart Portion Control</span>
+                                <span style="font-size: 0.75rem; color: var(--color-accent-gold); font-weight: 600; text-transform: uppercase;">Premium Tool</span>
+                            </div>
+                        </div>
+                        <i class="ph ph-caret-right" style="color: var(--color-accent-gold);"></i>
+                    </a>
 
-                    
                     <a href="#saved" style="display: flex; align-items: center; justify-content: space-between; padding: var(--spacing-md); border-bottom: 1px solid var(--color-border);">
                         <div style="display: flex; align-items: center; gap: 12px; font-weight: 500;">
                             <i class="ph ph-heart" style="font-size: 1.3rem; color: var(--color-text-secondary);"></i> Saved Recipes

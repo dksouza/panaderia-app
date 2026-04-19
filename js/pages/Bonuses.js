@@ -10,6 +10,14 @@ export const BonusesView = () => {
             <div class="container-pad" style="margin-top: var(--spacing-sm);">
                 <p style="color: var(--color-text-secondary); margin-bottom: var(--spacing-lg);">Exclusive unlocked content for CleanSweets members.</p>
                 
+                <!-- Premium Feature Banner -->
+                <div style="background: linear-gradient(135deg, var(--color-accent-cocoa), #2f2520); padding: var(--spacing-lg); border-radius: var(--radius-lg); margin-bottom: var(--spacing-xl); color: white; display: flex; flex-direction: column; align-items: flex-start; position: relative; overflow: hidden; box-shadow: var(--shadow-md);">
+                    <i class="ph-fill ph-scales" style="position: absolute; right: -20px; top: -20px; font-size: 8rem; color: rgba(255,255,255,0.05);"></i>
+                    <span style="background: var(--color-accent-gold); color: white; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; padding: 4px 8px; border-radius: 4px; margin-bottom: 12px; letter-spacing: 1px;">Premium Tool</span>
+                    <h3 style="font-size: 1.35rem; font-family: var(--font-heading); margin-bottom: 8px;">Smart Portion Control</h3>
+                    <p style="font-size: 0.85rem; opacity: 0.9; margin-bottom: 16px; max-width: 85%;">Find a more balanced dessert rhythm for your routine.</p>
+                    <a href="#portion-control" class="btn" style="background: white; color: var(--color-accent-cocoa); font-weight: 600; padding: 10px 20px; border-radius: 20px;">Open Tool <i class="ph ph-arrow-right"></i></a>
+                </div>
                 <div style="display: flex; flex-direction: column; gap: var(--spacing-md);">
                     ${bonuses.map(b => `
                         <div style="background: var(--color-white); border-radius: var(--radius-md); padding: var(--spacing-md); box-shadow: var(--shadow-sm); border-left: 4px solid var(--color-accent-gold);">
