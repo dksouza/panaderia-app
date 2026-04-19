@@ -1,0 +1,45 @@
+/* variables.css */
+:root {
+    /* Color Palette */
+    --color-bg-primary: #FDFCF8; /* Warm cream / off-white */
+    --color-bg-secondary: #F5F3EC; /* Slightly darker cream for cards/sections */
+    --color-text-primary: #2C2B29; /* Dark charcoal */
+    --color-text-secondary: #5F5E59; /* Muted charcoal */
+    
+    --color-accent-gold: #D4AF37; /* Muted gold */
+    --color-accent-gold-light: #F7F1DE; 
+    
+    --color-accent-cocoa: #4A3B32; /* Deep cocoa / warm brown */
+    --color-accent-sage: #8A9A86; /* Subtle sage green */
+    --color-accent-sage-light: #ECF0EB;
+    
+    --color-white: #FFFFFF;
+    --color-border: #E8E5DC;
+    
+    /* Typography */
+    --font-heading: 'Outfit', sans-serif;
+    --font-body: 'Inter', sans-serif;
+    
+    /* Spacing */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+    --spacing-xxl: 48px;
+    
+    /* Border Radius (Soft luxury feel) */
+    --radius-sm: 8px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+    --radius-full: 9999px;
+    
+    /* Shadows (Premium subtle depth) */
+    --shadow-sm: 0 2px 8px rgba(44, 43, 41, 0.04);
+    --shadow-md: 0 4px 16px rgba(44, 43, 41, 0.08);
+    --shadow-lg: 0 12px 32px rgba(44, 43, 41, 0.12);
+    
+    /* Transitions */
+    --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-smooth: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
